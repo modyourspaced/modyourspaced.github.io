@@ -1,31 +1,103 @@
-<!DOCTYPE html>
-<html lang="en">
+<html> 
 <head>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unbrick Chapter 2</title>
+    <title> Unbrick chapter 2 </title>
     <link rel="stylesheet" href="style4.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <!-- navbar content -->
-        </nav>
-        <h1>Chapter 2: Unbricking the phone!</h1>
-    </header>
-    <main class="content">
-        <ol>
-            <li>Extract the Bypass Tools zip, goto the Driver folder and find the .inf file, right click on it and press install.</li>
-            <img src="https://forum.xda-developers.com/attachments/1611352830350-png.5195737/" alt="Screenshot1">
-            <li>Download <a href="https://sourceforge.net/projects/libusb-win32/files/libusb-win32-releases/1.2.6.0/libusb-win32-devel-filter-1.2.6.0.exe/download">this file</a> and install it, after installing power off phone and connect to pc while holding Vol+- (don't leave the buttons after connecting). You might need <a href="http://www.mediafire.com/file/nninaiiqy1e5csa/New_QcomMtk_Driver_Setup_V2.0.1.1_GsmMafia.Com.exe/file">this driver</a> as well if it's not detected.</li>
-            <img src="https://forum.xda-developers.com/proxy.php?image=https%3A%2F%2Ftelegra.ph%2Ffile%2F3a6d351fec8ab9961a5e3.png&hash=37624050b4810679dd2721f19438c8e8" alt="Screenshot2">
-            <li>Press next, connect your device to PC while holding Vol+- buttons (your device needs to be powered off, and don't leave the buttons) and you will see the mtkdriver down below. Install it.</li>
-            <img src="https://forum.xda-developers.com/proxy.php?image=https%3A%2F%2Ftelegra.ph%2Ffile%2F310b8508659201f6729f7.png&hash=32d1dbb3dc3f7ab6d82e5dcbf042fe0a" alt="Screenshot3">
-            <li>Choose MediaTek USB Port and install it.</li>
-            <li>Then run brom.bat under bypass folder.</li>
-            <img src="https://forum.xda-developers.com/attachments/screenshot-63-png.5474379/" alt="Screenshot4" width="1000px">
-            <li>Now power off the phone and connect the phone while holding volume + and - (Don't leave the buttons until the bypass is done)</li>
-            <img src="https://forum.xda-developers.com/attachments/img_20211204_142400_352-png.5474375/" alt="Screenshot5" width="1000px">
-            <li>Go into Flash Tool folder and open the SPFlash tool go to Options - Option</li>
-            <img src="https://forum.xda-developers.com/attachments/screenshot-65-png.5474391/" alt="Screenshot6" width="1000px">
-            <li>Click on Connections and select UART and set Baud Rate to 921600</
+    
+    <div class="banner"> 
+        <div class="navbar"> 
+          </div>
+          <br>
+          <h1>Chapter 2: Unbricking the phone!</h1> 
+          <br>
+          <p> 1. Extract the Bypass Tools zip, goto the Driver folder and find the .inf file, right click on it and press install. </p>
+          <br>
+          <img src="https://forum.xda-developers.com/attachments/1611352830350-png.5195737/" alt="Screenshot1">
+          <br>
+          <br>
+          <p> 2. Download <a href="https://sourceforge.net/projects/libusb-win32/files/libusb-win32-releases/1.2.6.0/libusb-win32-devel-filter-1.2.6.0.exe/download">this file</a>  and install it, after installing power off phone and connect to pc while holding Vol+- (don't leave the buttons after connecting). You might need <a href="http://www.mediafire.com/file/nninaiiqy1e5csa/New_QcomMtk_Driver_Setup_V2.0.1.1_GsmMafia.Com.exe/file">this driver</a> as well if it's not detected.</p>
+          <br>
+          <img src="https://forum.xda-developers.com/proxy.php?image=https%3A%2F%2Ftelegra.ph%2Ffile%2F3a6d351fec8ab9961a5e3.png&hash=37624050b4810679dd2721f19438c8e8" alt="Screenshot2">
+          <br>
+          <br>
+          <p> 3. Press next, connect your device to PC while holding Vol+- buttons (your device needs to be powered off, and don't leave the buttons) and you will see the mtkdriver down below. Install it.</p>
+          <br>
+          <img src="https://forum.xda-developers.com/proxy.php?image=https%3A%2F%2Ftelegra.ph%2Ffile%2F310b8508659201f6729f7.png&hash=32d1dbb3dc3f7ab6d82e5dcbf042fe0a" alt="Screenshot3">
+          <br>
+          <br>
+          <p> 4. Choose MediaTek USB Port and install it.</p>
+          <br>
+          <p> 5. Then run brom.bat under bypass folder.</p>
+          <br>
+          <img src="https://forum.xda-developers.com/attachments/screenshot-63-png.5474379/" alt="Screenshot4" width="1000px">
+          <br>
+          <br>
+          <p> 6. Now power off the phone and connect the phone while holding volume + and - (Don't leave the buttons until the bypass is done) </p>
+          <br>
+          <br>
+          <img src="https://forum.xda-developers.com/attachments/img_20211204_142400_352-png.5474375/" alt="Screenshot5" width="1000px">
+          <br>
+          <br>
+          <p> 7. After the above step Go into Flash Tool folder and open the SPFlash tool go to Options - Option</p>
+          <br>
+          <img src="https://forum.xda-developers.com/attachments/screenshot-65-png.5474391/" alt="Screenshot6" width="1000px">
+          <br>
+          <br>
+          <p> 8. Click on Connections and select UART and set Baud Rate to 921600 </p>
+          <br>
+          <img src="https://forum.xda-developers.com/attachments/screenshot-68-png.5474395/" alt="Screenshot7" width="1000px">
+          <br>
+          <br>
+          <p> 9. After that choose scatter file and also if not set, set your download-agent. You don't need to select auth file as authorization is disabled. Once you do it, it should look like this. ALWAYS MAKE SURE DOWNLOAD ONLY MODE IS SELECTED! DON'T SELECT OTHER MODES! </p>
+          <br>
+          <br>
+          <img src="https://forum.xda-developers.com/attachments/img_20211204_141629_731-jpg.5474397/" alt="Screenshot8" width="1000px">
+          <br>
+          <br>
+          <p>Make SURE "Download Only" is selected. Don't select ANYTHING ELSE! You will lose your IMEIs, Serial Numbers, Capability of Hardware Attestation etc. if you choose "Format data + Download" make SURE you selected "Download Only".
+              <br> <br>
+            10. Uncheck oplusreserve2 first. Now, you can start downloading with the button and after that a checkmark will appear. You can reboot your phone and use it like before now! All your userdata will (inevitably) be cleared!
+            
+            After flashing it should look like this. Download has been complete. Enjoy!</p>
+            <br>
+            <br>
+            <img src="https://forum.xda-developers.com/attachments/img_20211212_004225-png.5480041/" alt="Screenshot9">
+            <br>
+            <br>
+            <h3>PLEASE READ:</h3>
+            <br>
+            <p>After this phone will not boot due to encryption, you can do any of the below procedures to format your data and boot your phone
+                <br>
+                <br>
+                1. In case you can access recovery by holding volume and power button (locked bootloaders) - Wipe all data from recovery and reboot
+                <br>
+                <br>
+                2. In case you cannot access recovery (unlocked bootloaders), power off phone then enter this command in mtkclient:
+            python mtk e metadata,userdata,md_udc, cache
+            <br>
+            <br>
+            <p>(For those entering the command:) And connect phone while holding both volume buttons. After this just reboot phone</p>
+            </p>
+            <br>
+            <p>Also don't panic if it takes a while to boot, just be patient!</p>
+            <br>
+            <hr>
+            <br>
+
+            <p>
+                Credits :
+                <br>
+                Bkerler for decryptor and for creating the tool.</p>
+                <br>
+                <p>Pritish for the amazing original guide on XDA forums!</p>
+                <br>
+                <hr>
+                <br>
+                <br>
+                <br>
+                <div class="content"> 
+                    <button onclick="document.location='index.html'"type="button"> <span></span> HOMEPAGE </button> 
+                </div>
+
