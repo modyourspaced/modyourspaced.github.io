@@ -1,86 +1,52 @@
-
-<html> 
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chapter 1</title>
     <link rel="stylesheet" href="style1.css">
 </head>
 <body>
-
-    <div class="banner"> 
-      <div class="navbar"> 
+    <header>
+        <nav class="navbar">
+            <!-- navbar content -->
+        </nav>
+    </header>
+    <main class="content">
+        <h2>Requirements:</h2>
+        <ul>
+            <li>PC or Laptop</li>
+            <li>Internet Connection</li>
+            <li>USB Cable</li>
+            <li>Take a backup of your data since it will be wiped</li>
+            <li>Go to About phone - Version, and tap build number 7 times</li>
+            <li>Go to Settings - advanced settings - Developer options and turn on OEM unlocking and USB debugging</li>
+            <li>Windows 10/11</li>
+        </ul>
+        <hr>
+        <h3>Chapter 1: Unlocking the Bootloader</h3>
+        <p>Install Python from windows store</p>
+        <p>And download these 2 files:</p>
+        <div class="download-buttons">
+            <button class="guide-button" onclick="document.location='https://github.com/daynix/UsbDk/releases'">USBDK DOWNLOAD</button>
+            <button class="guide-button" onclick="document.location='https://github.com/bkerler/mtkclient'">MTKCLIENT DOWNLOAD</button>
         </div>
-
-     <br>
-    <h2 style="font-family: Helvetica;" > Requirements: </h2>
-    <br>
-    <li style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;" > PC or Laptop </li>
-     <li style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;" > Internet Connection </li>
-     <li style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;" > USB Cable </li>
-     <li style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;" > Take a backup of your data since it will be wiped </li>
-     <li style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;" > Go to About phone - Version, and tap build number 7 times </li>
-     <li style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;" > Go to Settings - advanced settings - Developer options and turn on OEM unlocking and USB debugging </li>
-     <li style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;" > Windows 10/11 </li>
-     <br>
-     <hr>
-     <br>
-     <h3 style="font-family: Helvetica;" >Chapter 1: Unlocking the Bootloader</h3>
-     <br>
-     <p>Install Python from windows store
-      <br>
-      <br>
-      <p>And download these 2 files:
-      </p>
-      <br>
-       <br>
-       <br>
-      <div class="content"> 
-      <button onclick="document.location='https://github.com/daynix/UsbDk/releases'" type="button" > <span> </span> USBDK DOWNLOAD </a> </button> 
-      <button onclick="document.location='https://github.com/bkerler/mtkclient'" type="button"> <span> </span> MTKCLIENT DOWNLOAD </a> </button> 
-      </div>
-    
-
-     <p>Now go to the MTKclient folder which has been extracted.
-        <br>
-        Now open command prompt or powershell in that folder.</p>
-      <br>
+        <p>Now go to the MTKclient folder which has been extracted.</p>
+        <p>Now open command prompt or powershell in that folder.</p>
         <img src="/Screenshot1.png" alt="Screenshot1" width="600px">
-        <br>
-        <br>
-        <p>Now type pip3 install -r requirements.txt and hit enter, and press y when it asks you "Y/N"
-              <br>
-              <br>
-            Now type, python mtk da seccfg unlock and hit enter (this commands unlocks the bootloader)
-               <br>
-               <br>
-            Then power off your phone and hold both volume buttons and connect usb cable (DON'T LEAVE THE BUTTONS, KEEP THEM HOLDING THROUGHOUT THE PROCESS)</p>
-            <br>
-             <br>
-            <img src="Screenshot2.jpg" alt="Screenshot2" width="600px">
-            <br>
-            <br>
-            <p>Now disconnect usb and type python mtk e userdata,metadata (this command formats data.)
-                <br>
-                <br>
-                Now do the same thing you did with the seccfg command.
-                <br>
-                <br>
-                After this unplug your phone and turn it on (It'll show your device dm verity corrupted and first boot might take 20-25 mins, don't panic)
-                <br>
-                <br>
-               Now your bootloader is unlocked. </p>
-                <br>
-            <img src="Screenshot3.jpg" alt="Screenshot3" width="300px">
-            <br>
-            <br>
-            <br>
-            <hr>
-            <br>
-            <br>
-            <br>
-            <div class="content"> 
-            <button onclick="document.location='Chapter2.html'"type="button"> <span></span> Goto Chapter 2 </button> 
-            </div>
-               
+        <p>Now type pip3 install -r requirements.txt and hit enter, and press y when it asks you "Y/N"</p>
+        <p>Now type, python mtk da seccfg unlock and hit enter (this commands unlocks the bootloader)</p>
+        <p>Then power off your phone and hold both volume buttons and connect usb cable (DON'T LEAVE THE BUTTONS, KEEP THEM HOLDING THROUGHOUT THE PROCESS)</p>
+        <img src="Screenshot2.jpg" alt="Screenshot2" width="600px">
+        <p>Now disconnect usb and type python mtk e userdata,metadata (this command formats data.)</p>
+        <p>Now do the same thing you did with the seccfg command.</p>
+        <p>After this unplug your phone and turn it on (It'll show your device dm verity corrupted and first boot might take 20-25 mins, don't panic)</p>
+        <img src="Screenshot3.jpg" alt="Screenshot3" width="300px">
+        <p>Now your bootloader is unlocked.</p>
+        <hr>
+        <div class="content">
+            <button class="guide-button" onclick="document.location='Chapter2.html'">Goto Chapter 2</button>
+        </div>
+    </main>
 </body>
 </html>

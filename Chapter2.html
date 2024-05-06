@@ -1,125 +1,62 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chapter 2</title>
     <link rel="stylesheet" href="style2.css">
 </head>
 <body>
-    <div class="banner"> 
-      <br>
-    <h1 style="font-family:Helvetica;" > Chapter 2: Flashing Custom Recoveries and Custom ROMS</h1>
-    <br>
-    <p> First, you need to flash patched LK to access the bootloader to flash TWRP.</p>
-    <br>
-    <br>
-    <div class="content"> 
-      <br>
-      <br>
-      <br>
-      <br>
-      <p> LK links (choose according to your device and realmeui version) </p> 
-    <button onclick="document.location='https://t.me/Realme8iCommunity/138074'" type="button" > <span></span> (RUI2) LK for Narzo 50 </a> </button> 
-      <button onclick="document.location='https://t.me/Realme8iCommunity/138075'" type="button"> <span></span> (RUI2) LK for 8i  </button>  
-      <button onclick="document.location='https://t.me/Realme8iCommunity/175916'" type="button" > <span></span> (RUI3) LK for Narzo 50  </a> </button> 
-      <button onclick="document.location='https://t.me/Realme8iCommunity/175913'" type="button"> <span></span> (RUI3) LK for 8i </button>
-      <hr>
-      <h2>Let's continue.. </h2>
-      </div>
-      
-      <p>Now, download the one for your device and paste it in MTKclient folder.
-        Take backup of your existing LK first (IMPORTANT)
-        <br>
-        <br>
-        Take backup: python mtk r lk lk.img 
-        <br>
-        <br>
-        Your LK will be pasted in the MTKclient folder itself.
-        <br>
-        <br>
-        If anything goes wrong after flashing the patched LK you can easily flash your default one by: python mtk w lk lk.img
-        <br>
-        <br>
-        So now, to flash the patched LK, run the command: python mtk w lk lk.bin
-        <br>
-        <br>
-        When the process is complete, disconnect usb and hold volume down and power at the same time until you see this on the phone.
-        </p>
-         <br>
-        <img src="Screenshot4.jpg" alt="Screenshot4" width="500px">
-       <br>
-       <br>
-       <p>Now you are inside fastboot mode.
-       <br> 
-        You can flash TWRP now.</p>
-        <br>
+    <header>
+        <h1>Chapter 2: Flashing Custom Recoveries and Custom ROMS</h1>
+    </header>
+    <main class="content">
+        <p>First, you need to flash patched LK to access the bootloader to flash TWRP.</p>
+        <div class="download-buttons">
+            <p>LK links (choose according to your device and realmeui version)</p>
+            <button class="guide-button" onclick="document.location='https://t.me/Realme8iCommunity/138074'">LK for Narzo 50 (RUI2)</button>
+            <button class="guide-button" onclick="document.location='https://t.me/Realme8iCommunity/138075'">LK for 8i (RUI2)</button>
+            <button class="guide-button" onclick="document.location='https://t.me/Realme8iCommunity/175916'">LK for Narzo 50 (RUI3)</button>
+            <button class="guide-button" onclick="document.location='https://t.me/Realme8iCommunity/175913'">LK for 8i (RUI3)</button>
+        </div>
         <hr>
-        <br>
-        <br>
+        <h2>Let's continue..</h2>
+        <p>Now, download the one for your device and paste it in MTKclient folder.</p>
+        <p>Take backup of your existing LK first (IMPORTANT)</p>
+        <p>Take backup: python mtk r lk lk.img</p>
+        <p>Your LK will be pasted in the MTKclient folder itself.</p>
+        <p>If anything goes wrong after flashing the patched LK you can easily flash your default one by: python mtk w lk lk.img</p>
+        <p>So now, to flash the patched LK, run the command: python mtk w lk lk.bin</p>
+        <img src="Screenshot4.jpg" alt="Screenshot4" width="500px">
+        <p>Now you are inside fastboot mode.</p>
+        <p>You can flash TWRP now.</p>
+        <hr>
         <p>Download TWRP from here:</p>
-        <br>
-        <br>
-        <br>
-        <div class="content"> 
-        <button onclick="document.location='https://twrp.me/realme/realme8i.html'" type="button" > <span></span> TWRP for 8i/Narzo50 </a> </button>
-      </div>
-         <p>And rename it to recovery.img
-            <br>
-            <p>Now you need platform tools and ADB Drivers:</p>
-            <br>
-            <br>
-            <div class="content">
-            <button onclick="document.location='https://dl.google.com/android/repository/platform-tools-latest-windows.zip'" type="button" > <span></span> Platform Tools </a> </button>
-          </div>
-            <br>
-          
-            <p>And extract it, then paste the extracted folder in your C drive.
-          <br>
-                Now follow this guide:</p>
-                <br>
-               <br>
-                   <br>
-                <div class="content"> 
-                <button onclick="document.location='https://forum.xda-developers.com/t/official-tool-windows-adb-fastboot-and-drivers-15-seconds-adb-installer-v1-4-3.2588979/'" type="button" > <span></span> Guide for ADB Drivers </a> </button>
-              </div>
-                <p>After this is done, open cmd or Powershell inside the platform-tools folder.
-                     <br>
-                    Paste the recovery.img in the platform-tools folder.
-                    <br>
-                    <br>
-                    Type fastboot devices to see if your device is detected.
-                    <br>
-                    Now, type fastboot flash recovery recovery.img
-                    <br>
-                    <br>
-                    After it's completed, type fastboot reboot recovery to go to recovery.
-                     <br>
-                    Note: if you want to goto system, remember that realmeUI will replace TWRP with the stock recovery every time you go into system.</p>
-                    <br>
-                    <hr>
-                    <br>
-                     <br>
-                    <p>After you've done, you can download ROMs from here:</p>
-                    <br>
-                    <br>
-                    <div class="content"> 
-                    <button onclick="document.location='https://t.me/Realme8iUpdates'" type="button" > <span></span> ROMs Telegram Group </a> </button>
-                   </div>
-                    <p>Finally, to flash a ROM:</p>
-                    <br>
-                   <li style="font-family: Helvetica;"> Wipe dalvik, data and cache (from wipe - advanced wipe) </li>
-                   <li style="font-family: Helvetica;"> ROM </li>
-                   <li style="font-family: Helvetica;"> Flash magisk for root (optional) </li>
-                   <li style="font-family: Helvetica;"> Format data and reboot</li>
-                   <br>
-                   <br>
-    
-                   <p>That's all, enjoy!</p>
-                   <br> 
-                   <br>
-                    <div class="content"> 
-                   <button onclick="document.location='index.html'"type="button"> <span></span> HOMEPAGE </button> 
-   
-               <hr>
-                    </div>
-</body>
-</html>
+        <div class="download-buttons">
+            <button class="guide-button" onclick="document.location='https://twrp.me/realme/realme8i.html'">TWRP for 8i/Narzo50</button>
+        </div>
+        <p>And rename it to recovery.img</p>
+        <p>Now you need platform tools and ADB Drivers:</p>
+        <div class="download-buttons">
+            <button class="guide-button" onclick="document.location='https://dl.google.com/android/repository/platform-tools-latest-windows.zip'">Platform Tools</button>
+        </div>
+        <p>And extract it, then paste the extracted folder in your C drive.</p>
+        <p>Now follow this guide:</p>
+        <div class="download-buttons">
+            <button class="guide-button" onclick="document.location='https://forum.xda-developers.com/t/official-tool-windows-adb-fastboot-and-drivers-15-seconds-adb-installer-v1-4-3.2588979/'">Guide for ADB Drivers</button>
+        </div>
+        <p>After this is done, open cmd or Powershell inside the platform-tools folder.</p>
+        <p>Paste the recovery.img in the platform-tools folder.</p>
+        <p>Type fastboot devices to see if your device is detected.</p>
+        <p>Now, type fastboot flash recovery recovery.img</p>
+        <p>After it's completed, type fastboot reboot recovery to go to recovery.</p>
+        <p>Note: if you want to goto system, remember that realmeUI will replace TWRP with the stock recovery every time you go into system.</p>
+        <hr>
+        <p>After you've done, you can download ROMs from here:</p>
+        <div class="download-buttons">
+            <button class="guide-button" onclick="document.location='https://t.me/Realme8iUpdates'">ROMs Telegram Group</button>
+        </div>
+        <p>Finally, to flash a ROM:</p>
+        <ul>
+            <li>Wipe dalvik, data and cache (from wipe - advanced wipe)</li>
+            <
